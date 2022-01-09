@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/satie.mp3-f39a7e314b24e2df5596aa3ead8b74bf.mp3str"
+
+[deps]
+
+source_file="res://audio/satie.mp3"
+dest_files=[ "res://.import/satie.mp3-f39a7e314b24e2df5596aa3ead8b74bf.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

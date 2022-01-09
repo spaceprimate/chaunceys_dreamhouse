@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Dialog/DialogPlayer.gd" type="Script" id=1]
+[ext_resource path="res://Art/backgrounds/dialog_bg3.png" type="Texture" id=2]
+
+[node name="DialogPlayer" type="CanvasLayer"]
+script = ExtResource( 1 )
+dialog_file = "res://Dialog/dialogs.json"
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+margin_left = 7.0
+margin_top = 4.0
+margin_right = 414.0
+margin_bottom = 114.0
+texture = ExtResource( 2 )
+patch_margin_left = 27
+patch_margin_top = 29
+patch_margin_right = 30
+patch_margin_bottom = 37
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="RichTextLabel" parent="NinePatchRect"]
+margin_left = 18.0
+margin_top = 17.0
+margin_right = 379.0
+margin_bottom = 36.0
+text = "Name"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Message" type="RichTextLabel" parent="NinePatchRect"]
+margin_left = 23.0
+margin_top = 53.0
+margin_right = 377.0
+margin_bottom = 126.0
+text = "Message"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.4
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

@@ -1,0 +1,19 @@
+extends Area2D
+
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = "text"
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+func _input(event):
+	if event.is_action_pressed("ui_pick"):
+		
+		if get_overlapping_bodies().size() > 0:
+			print("next level called tho")
+			var root = get_node("../../Level1")
+			root.enter_world()

@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Menus/Example_menu.gd" type="Script" id=1]
+[ext_resource path="res://Art/backgrounds/fade_down_to_purple.png" type="Texture" id=2]
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 207, 119 )
+scale = Vector2( 0.178125, 0.146682 )
+texture = ExtResource( 2 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -94.0
+margin_right = 60.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StartButton" type="Button" parent="VBoxContainer"]
+margin_right = 60.0
+margin_bottom = 20.0
+text = "start"
+
+[node name="OptionsButton" type="Button" parent="VBoxContainer"]
+margin_top = 24.0
+margin_right = 60.0
+margin_bottom = 44.0
+text = "options"
+
+[node name="QuitButton" type="Button" parent="VBoxContainer"]
+margin_top = 48.0
+margin_right = 60.0
+margin_bottom = 68.0
+text = "quit"
+
+[node name="ToolButton" type="ToolButton" parent="VBoxContainer"]
+margin_top = 72.0
+margin_right = 60.0
+margin_bottom = 94.0
+text = "ASDF"
+
+[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_StartButton_pressed"]

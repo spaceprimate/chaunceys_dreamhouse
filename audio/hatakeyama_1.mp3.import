@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/hatakeyama_1.mp3-d85af535af48cb3d51833662009dd864.mp3str"
+
+[deps]
+
+source_file="res://audio/hatakeyama_1.mp3"
+dest_files=[ "res://.import/hatakeyama_1.mp3-d85af535af48cb3d51833662009dd864.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
