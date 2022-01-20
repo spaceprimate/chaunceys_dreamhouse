@@ -74,6 +74,34 @@ region = Rect2( 96, 0, 32, 32 )
 atlas = ExtResource( 2 )
 region = Rect2( 128, 0, 32, 32 )
 
+[sub_resource type="AtlasTexture" id=74]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=75]
+atlas = ExtResource( 4 )
+region = Rect2( 32, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=76]
+atlas = ExtResource( 4 )
+region = Rect2( 64, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=77]
+atlas = ExtResource( 4 )
+region = Rect2( 96, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=78]
+atlas = ExtResource( 4 )
+region = Rect2( 128, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=79]
+atlas = ExtResource( 4 )
+region = Rect2( 160, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=97]
+atlas = ExtResource( 6 )
+region = Rect2( 0, 0, 32, 32 )
+
 [sub_resource type="AtlasTexture" id=98]
 atlas = ExtResource( 7 )
 region = Rect2( 0, 0, 32, 32 )
@@ -105,30 +133,6 @@ region = Rect2( 192, 0, 32, 32 )
 [sub_resource type="AtlasTexture" id=62]
 atlas = ExtResource( 3 )
 region = Rect2( 0, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=74]
-atlas = ExtResource( 4 )
-region = Rect2( 0, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=75]
-atlas = ExtResource( 4 )
-region = Rect2( 32, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=76]
-atlas = ExtResource( 4 )
-region = Rect2( 64, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=77]
-atlas = ExtResource( 4 )
-region = Rect2( 96, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=78]
-atlas = ExtResource( 4 )
-region = Rect2( 128, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=79]
-atlas = ExtResource( 4 )
-region = Rect2( 160, 0, 32, 32 )
 
 [sub_resource type="AtlasTexture" id=80]
 atlas = ExtResource( 5 )
@@ -178,10 +182,6 @@ region = Rect2( 320, 0, 32, 32 )
 atlas = ExtResource( 5 )
 region = Rect2( 352, 0, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=97]
-atlas = ExtResource( 6 )
-region = Rect2( 0, 0, 32, 32 )
-
 [sub_resource type="SpriteFrames" id=44]
 animations = [ {
 "frames": [ SubResource( 63 ), SubResource( 64 ), SubResource( 65 ), SubResource( 66 ), SubResource( 67 ), SubResource( 68 ), SubResource( 69 ), SubResource( 70 ), SubResource( 71 ), SubResource( 72 ), SubResource( 73 ) ],
@@ -194,6 +194,16 @@ animations = [ {
 "name": "Wall Jump",
 "speed": 20.0
 }, {
+"frames": [ SubResource( 74 ), SubResource( 75 ), SubResource( 76 ), SubResource( 77 ), SubResource( 78 ), SubResource( 79 ) ],
+"loop": true,
+"name": "Double Jump",
+"speed": 20.0
+}, {
+"frames": [ SubResource( 97 ) ],
+"loop": true,
+"name": "Fall",
+"speed": 20.0
+}, {
 "frames": [ SubResource( 98 ), SubResource( 99 ), SubResource( 100 ), SubResource( 101 ), SubResource( 102 ), SubResource( 103 ), SubResource( 104 ) ],
 "loop": true,
 "name": "Hit",
@@ -204,19 +214,9 @@ animations = [ {
 "name": "Jump",
 "speed": 20.0
 }, {
-"frames": [ SubResource( 74 ), SubResource( 75 ), SubResource( 76 ), SubResource( 77 ), SubResource( 78 ), SubResource( 79 ) ],
-"loop": true,
-"name": "Double Jump",
-"speed": 20.0
-}, {
 "frames": [ SubResource( 80 ), SubResource( 81 ), SubResource( 82 ), SubResource( 83 ), SubResource( 84 ), SubResource( 85 ), SubResource( 86 ), SubResource( 87 ), SubResource( 88 ), SubResource( 89 ), SubResource( 90 ), SubResource( 91 ) ],
 "loop": true,
 "name": "run",
-"speed": 20.0
-}, {
-"frames": [ SubResource( 97 ) ],
-"loop": true,
-"name": "Fall",
 "speed": 20.0
 } ]
 
@@ -392,7 +392,7 @@ jump_impulse = 700.0
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 44 )
 animation = "idle"
-frame = 7
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

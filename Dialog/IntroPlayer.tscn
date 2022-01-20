@@ -1,18 +1,18 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Dialog/DialogPlayer.gd" type="Script" id=1]
-[ext_resource path="res://Art/backgrounds/dialog_bg3.png" type="Texture" id=2]
+[ext_resource path="res://Art/backgrounds/dialog_bg3.png" type="Texture" id=1]
+[ext_resource path="res://Dialog/DialogPlayer.gd" type="Script" id=2]
 
 [node name="DialogPlayer" type="CanvasLayer"]
-script = ExtResource( 1 )
+script = ExtResource( 2 )
 dialog_file = "res://Dialog/dialogs.json"
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 margin_left = 7.0
 margin_top = 4.0
 margin_right = 414.0
-margin_bottom = 114.0
-texture = ExtResource( 2 )
+margin_bottom = 232.0
+texture = ExtResource( 1 )
 patch_margin_left = 27
 patch_margin_top = 29
 patch_margin_right = 30
@@ -32,11 +32,21 @@ __meta__ = {
 }
 
 [node name="Message" type="RichTextLabel" parent="NinePatchRect"]
-margin_left = 23.0
-margin_top = 53.0
-margin_right = 377.0
-margin_bottom = 168.0
+margin_left = 232.0
+margin_top = 64.0
+margin_right = 387.0
+margin_bottom = 179.0
 text = "Message"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Message2" type="RichTextLabel" parent="NinePatchRect"]
+margin_left = 21.0
+margin_top = 67.0
+margin_right = 194.0
+margin_bottom = 201.0
+text = "pick up"
 __meta__ = {
 "_edit_use_anchors_": false
 }

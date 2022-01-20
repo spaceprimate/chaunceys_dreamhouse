@@ -13,7 +13,7 @@ export(Vector2) var house_position = Vector2(877, -403)
 export(Vector2) var player_position = start_position
 export var set_player_position = true
 
-export var house_visible = false
+export var house_visible = false	
 
 export var intro_played = false
 

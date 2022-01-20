@@ -1,5 +1,6 @@
 [
-	{"name": "CONTROLS", "text": "X to interact (next dialog, pick up objects, read signs, enter doors. A to jump. Y to drop. B to throw. "},
+	{"name": "CONTROLS - controller", "text": "X to interact (next dialog, pick up objects, read signs, enter doors. \n\nA to jump. Y to drop. B to throw. "},
+	{"name": "CONTROLS - keyboard", "text": "E to interact (next dialog, 	pick up objects, read signs, enter doors. SPACEBAR to jump.\n\n R to drop. Q to throw.\n\n Use arrow keys and ENTER to interact with menus"},
 	{"name": "", "text": "You wake on a cliffside, overlooking your home. What was your home."},
 	{"name": "", "text": "It was a modest, but with such potential. You refuse to believe it's lost..."},
 	{"name": "", "text": "The last thing you remember was the storm, a terrible wind that pulled your modest house effortlessly into the clouds"},
